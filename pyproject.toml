@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "nlp"
+version = "0.1.0"
+description = ""
+authors = ["Mateusz Więckowski <mr.mateuszwieckowski@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "3.8.10"
+tweepy = "^4.4.0"
+PyYAML = "^6.0"
+pandas = "^1.4.0"
+spacy = {extras = ["113"], version = "^3.2.1"}
+scipy = "^1.7.3"
+seaborn = "^0.11.2"
+scikit-learn = "^1.0.2"
+nltk = "^3.6.7"
+gensim = "^4.1.2"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^21.12b0", allow-prereleases = true}
+ipykernel = "^6.7.0"
+embfile = "^0.1.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
